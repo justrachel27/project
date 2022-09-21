@@ -2,7 +2,8 @@
 /* Class Person
 Inherited from PersonalDetails (public mode)
 Class have protected attributes -  role
-Class have public functions -  getRole, setRole, constructor, deconstructor*/#ifndef PERSON_H
+Class have public functions -  getRole, setRole, constructor, deconstructor*/
+#ifndef PERSON_H
 #define PERSON_H
 #include <iostream>
 #include <string>
