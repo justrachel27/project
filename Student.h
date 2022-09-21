@@ -8,7 +8,7 @@ using namespace std;
 
 class Student: public Person{
     protected:
-    int year_level;
+    int Year_Level;
     public:
     Student();
    void setRole(); //Virtual setRole, getRole functions
@@ -17,7 +17,8 @@ class Student: public Person{
     void New_Student_Detail();
     void Update_Student_Detail();
     //Subject* m_array;
-    int yearlevel(int level);
+    void Set_Year_Level(int level);
+    int Get_Year_Level();
     ~Student();
 };
 #endif //STUDENT_H
