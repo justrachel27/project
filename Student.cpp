@@ -20,10 +20,12 @@ Student::Student() {
 }
 void Student::setRole() { role = "Student"; }
 string Student::getRole() { return role; }
-
-int Student::yearlevel(int level) {
-  year_level = level;
-  return year_level;
+void Student::Set_Year_Level(int level){
+    Year_Level = level;
 }
+int Student::Get_Year_Level(){
+        return Year_Level;
+    }
+
 
 Student::~Student() {}
