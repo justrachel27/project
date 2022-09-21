@@ -1,23 +1,33 @@
-#include <iostream>
 #include "Teacher.h"
-#include "Person.h"
 
+#include <iostream>
+#include <string>
+
+#include "Person.h"
+#include "PersonalDetails.h"
 
 using namespace std;
-
-Teacher::Teacher(int experiences){
-    this->experiences=experiences;
+Teacher::Teacher() {
+  name = "Null";
+  age = 0;
+  email = "Null";
+  dateBD = 0;
+  monthBD = 0;
+  yearBD = 0;
+  ID = 0;
+  gender = "Null";
+  experiences = 0;
+  role = "Teacher"; 
 }
 
-void Teacher::set_role(Person role){
-    this->role=role;
-}
+Teacher::Teacher(int experiences) { this->experiences = experiences; }
 
-Person Teacher::get_role(){
-    return role;
+void Teacher::set_experience(int experienceTemp) {
+  experiences = experienceTemp;
 }
+int Teacher::get_experience() { return experiences; }
+void Teacher::setRole() { role = "Teacher"; }
 
-void display(){
-    cout<<"Experience level: "<<experiences<<endl;
-    cout<<"Teacher role: "<<role.getRole()<<endl;
-}
+string Teacher::getRole() { return role; }
+
+Teacher::~Teacher() {}
