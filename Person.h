@@ -2,8 +2,7 @@
 /* Class Person
 Inherited from PersonalDetails (public mode)
 Class have protected attributes -  role
-Class have public functions -  getRole, setRole, constructor, deconstructor*/
-#ifndef PERSON_H
+Class have public functions -  getRole, setRole, constructor, deconstructor*/#ifndef PERSON_H
 #define PERSON_H
 #include <iostream>
 #include <string>
@@ -17,7 +16,7 @@ class Person : public PersonalDetails {
 
  public:
   Person();
-  virtual void setRole(string roleTemp) = 0; //Virtual setRole, getRole functions
+  virtual void setRole() = 0; //Virtual setRole, getRole functions
   virtual string getRole() =0; //ensures that derived class have their own roles 
   ~Person(); 
 };
