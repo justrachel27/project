@@ -11,7 +11,7 @@ class Student: public Person{
     int year_level;
     public:
     Student();
-   void setRole(string roleTemp); //Virtual setRole, getRole functions
+   void setRole(); //Virtual setRole, getRole functions
  string getRole(); //ensures that derived class have their own roles 
 
     void New_Student_Detail();
@@ -21,5 +21,4 @@ class Student: public Person{
     ~Student();
 };
 #endif //STUDENT_H
-
 
