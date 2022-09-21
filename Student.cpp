@@ -2,7 +2,7 @@
 #include <string>
 #include "PersonalDetails.h"
 #include "Person.h"
-#include "student.h"
+#include "Student.h"
 using namespace std;
 
 Student::Student(){
@@ -16,14 +16,12 @@ Student::Student(){
     gender = "Null"; 
 }
 
-   void Student::setRole(string roleTemp){
-    role = roleTemp; 
-   } 
-
-
- string Student::getRole(){
-    return role; 
- }
+string Student::setRoll(){
+    role = "Student";
+}
+string Student::getRoll(){
+    return role;
+}
 
 int Student::yearlevel(int level){
     year_level = level;
@@ -31,6 +29,6 @@ int Student::yearlevel(int level){
 }
 
 Student::~Student(){
-    
+
 }
 
