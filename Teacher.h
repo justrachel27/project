@@ -1,17 +1,20 @@
 #ifndef TEACHER_H
 #define TEACHER_H
 #include "Person.h"
+#include "PersonalDetails.h"
 using namespace std;
 
-class Teacher{
-    public:
-    Teacher(int experiences);
-    void set_role(Person role);
-    Person get_role();
-    void display();
+class Teacher : public Person {
+ protected:
+  int experiences;
 
-    private:
-    Person role;
-    int experiences;
+ public:
+  Teacher();
+  Teacher(int experiences);
+  void set_experience(int experienceTemp);
+  int get_experience();
+  void setRole();
+  string getRole();
+  ~Teacher();
 };
 #endif
